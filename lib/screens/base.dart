@@ -45,10 +45,34 @@ class BaseConverterScreen extends StatelessWidget {
                     baseConverter.setBase(newValue);
                   }
                 },
-                items: const [
-                  DropdownMenuItem(value: 2, child: Text('Binario')),
-                  DropdownMenuItem(value: 8, child: Text('Octal')),
-                  DropdownMenuItem(value: 16, child: Text('Hexadecimal')),
+                items: [
+                  DropdownMenuItem(
+                      value: 2,
+                      child: Text(
+                        'Binario',
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: themeProvider.primaryColor),
+                      )),
+                  DropdownMenuItem(
+                      value: 8,
+                      child: Text(
+                        'Octal',
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: themeProvider.primaryColor),
+                      )),
+                  DropdownMenuItem(
+                      value: 16,
+                      child: Text(
+                        'Hexadecimal',
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: themeProvider.primaryColor),
+                      )),
                 ],
               ),
               const SizedBox(height: 20),
